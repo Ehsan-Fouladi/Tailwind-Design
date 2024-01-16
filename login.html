@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="flex flex-col sm:flex-row justify-center items-center h-screen">
+    <div class="shadow-xl drop-shadow-lg sm:rounded-r-lg sm:w-[30%] sm:h-[60%] bg-pink-500 w-96 h-44">
+        <div class="flex flex-col justify-center items-center space-y-4">
+            <span class="text-4xl text-white capitalize sm:mt-32 mt-4 text-balance text-center">Welcome to login</span>
+            <span class="text-base text-white capitalize">Don't have an account?</span>
+            <a href="#" class="rounded-2xl border-white border-2 px-3 py-2 text-white hover:text-black hover:bg-white delay-150 duration-300 ease-in">Register</a>
+        </div>
+    </div>
+    <div class="shadow-xl drop-shadow-lg sm:rounded-l-lg sm:w-[30%] sm:h-[60%] w-96 p-8 bg-white">
+        <div class="flex flex-row">
+            <div class="ml-auto flex -mt-2">
+                <div class="size-10 hover:bg-pink-600 rounded-full hover:text-white delay-150 duration-300 mr-4 flex justify-center items-center">
+                    <span class="fa fa-github"></span>
+                </div>
+                <div class="size-10 hover:bg-pink-600 rounded-full hover:text-white delay-150 duration-300 flex justify-center items-center">
+                    <span class="fa fa-google"></span>
+                </div>
+            </div>
+            <span class="text-gray-600 uppercase">Login Form</span>
+        </div>
+        <form method="post" class="flex flex-col mt-3">
+            <label for="username" class="uppercase text-gray-900 text-sm">username</label>
+            <div class="flex justify-center items-center flex-col">
+            <input type="text" placeholder="username" name="username" class="outline-none mt-3 bg-gray-200 rounded-2xl lg:w-80 px-3 py-3 placeholder:text-gray-600 focus:bg-gray-300">
+            </div>
+            <label for="password" class="uppercase text-gray-900 mt-5 text-sm">password</label>
+            <div class="flex justify-center items-center flex-col">
+            <input type="password" placeholder="password" name="password" class="outline-none mt-3 bg-gray-200 rounded-2xl lg:w-80 px-3 py-3 placeholder:text-gray-600 focus:bg-gray-300">
+            </div>
+            <div class="flex justify-center items-center flex-col">
+            <button type="submit" class="mt-5 capitalize px-3 py-2 text-white rounded-2xl lg:w-80 w-36 bg-gradient-to-r from-pink-400 to-pink-600 outline-none hover:from-pink-500 hover:to-pink-400">login</button>
+            </div>
+        </form>
+        <div class="flex lg:flex-row flex-col justify-around items-center mt-4">
+            <span class="capitalize"><input type="checkbox" class="mr-2 accent-pink-300 focus:accent-pink-500">remember me</span>
+            <span class="capitalize text-gray-600 mt-3 sm:mt-0">forgot password</span>
+        </div>
+    </div>
+</body>
+</html>
